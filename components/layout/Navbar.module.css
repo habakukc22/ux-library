@@ -1,0 +1,254 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 8vh;
+  width: 100%;
+  padding: 12px 0px;
+  background-color: white;
+  margin: 0;
+
+  -webkit-box-shadow: 0px 1px 1px 1px rgba(87, 87, 87, 0.2);
+  -moz-box-shadow: 0px 1px 1px 1px rgba(87, 87, 87, 0.2);
+  box-shadow: 0px 1px 1px 1px rgba(87, 87, 87, 0.2);
+
+  /* border: 1px solid green; */
+  min-width: fit-content;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.leftside {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.logo {
+  display: none;
+}
+
+.sort {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgray;
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  margin: 4px;
+
+  cursor: pointer;
+}
+
+.verticalbar {
+  display: none;
+}
+
+.horizontalbar {
+  margin: 2px 4px;
+  width: 16px;
+  height: 4px;
+  background-color: rgb(71, 71, 71);
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  height: 36px;
+}
+
+.searchbar .searchicon {
+  color: rgba(206, 206, 206, 255);
+  margin: 4px 4px 4px 6px;
+  font-size: 24px;
+}
+
+.searchbar form {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  height: 36px;
+  width: 220px;
+  border-radius: 4px;
+  /* border: 1px solid red; */
+  background-color: rgba(240, 240, 240, 255);
+}
+
+.searchbar form input {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(240, 240, 240, 255);
+}
+
+.searchbar form input:focus {
+  outline: none;
+}
+
+.rightside {
+  display: flex;
+  align-items: center;
+  margin: 4px;
+}
+
+.add {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+
+  cursor: pointer;
+}
+
+.addbutton {
+  font-weight: 700;
+  height: 36px;
+  color: white;
+  background-color: var(--orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 10px 4px 10px;
+  border-radius: 4px 4px 4px 4px;
+  border-right: 1px solid #d63820;
+}
+
+.addbutton svg {
+  font-size: 20px;
+}
+
+.addtext {
+  display: none;
+}
+
+.userimage span {
+  background-color: var(--orange);
+  color: white;
+  font-weight: bold;
+  font-size: 0.6em;
+  padding: 8px;
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  left: 8px;
+}
+
+.userimage img {
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+}
+
+.userimage {
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+
+  cursor: pointer;
+}
+
+@media (min-width: 460px) {
+  .navbar {
+    height: 12vh;
+    /* padding: 12px 180px; */
+    padding: 0px;
+    justify-content: center;
+  }
+
+  .navbar .container {
+    width: 960px;
+    justify-content: space-between;
+  }
+
+  .leftside {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .rightside {
+    margin: 0;
+  }
+
+  .logo {
+    color: var(--orange);
+    font-size: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .verticalbar {
+    display: flex;
+    margin: 2px 16px;
+    width: 1px;
+    background-color: lightgray;
+    height: 44px;
+  }
+
+  .sort {
+    width: 44px;
+    height: 44px;
+  }
+
+  .searchbar {
+    margin-left: -1.5em;
+  }
+
+  .searchbar form {
+    height: 44px;
+    width: 360px;
+  }
+
+  .addbutton {
+    font-weight: 700;
+    height: 44px;
+    color: white;
+    background-color: var(--orange);
+    display: flex;
+    align-items: center;
+    padding: 4px 16px 4px 10px;
+    border-radius: 4px 0px 0px 4px;
+    border-right: 1px solid #d63820;
+  }
+
+  .addtext {
+    font-weight: 700;
+    height: 44px;
+    color: white;
+    background-color: var(--orange);
+    display: flex;
+    align-items: center;
+    padding: 4px 10px 4px 12px;
+    border-radius: 0px 4px 4px 0;
+  }
+
+  .userimage {
+    height: 44px;
+    width: 44px;
+  }
+
+  .userimage img {
+    width: 44px;
+    height: 44px;
+  }
+}

@@ -1,0 +1,53 @@
+.posts {
+  max-width: 100%;
+  margin-top: 36px;
+  /* overflow: scroll; */
+}
+
+.sort label {
+  margin-right: 0.8em;
+}
+
+.loadmore {
+  margin: 36px 0;
+  width: 100%;
+  height: 44px;
+  background-color: #f4f4f1;
+  color: var(--orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  padding: 2em 1em;
+  cursor: pointer;
+}
+
+.loadmore svg {
+  font-size: 1.5em;
+}
+
+/* .loadmore svg:active {
+  transform: rotate(180deg);
+  transition: all 500ms ease-in-out;
+} */
+
+.loadmore span {
+  /* text-decoration: underline; */
+  margin-left: 0.6em;
+}
+
+.notfound,
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 3em;
+  font-weight: bold;
+  color: var(--orange);
+}
+
+.notfound svg {
+  margin-left: 0.5em;
+}

@@ -1,0 +1,158 @@
+.post {
+  width: 100%;
+  margin: 26px 4px;
+  display: flex;
+}
+
+.upvotes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  height: 80px;
+  width: 40px;
+  padding: 0px;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+}
+
+.upvotes span {
+  border-top: 1px solid lightgray;
+  width: 100%;
+  text-align: center;
+  padding: 4px;
+}
+
+.upvotes svg {
+  color: var(--orange);
+}
+
+.postdetails {
+  margin-left: 12px;
+}
+
+.postdetails .url {
+  font-size: 0.8em;
+  color: #cbcbcb;
+}
+
+.postdetails .title {
+  color: rgb(63, 63, 63);
+  font-size: 25px;
+  margin: 0px;
+  max-width: 100%;
+}
+
+.moredetails {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.moredetails .rightcontainer,
+.moredetails .leftcontainer {
+  display: flex;
+
+  align-items: center;
+}
+
+.moredetails .rightcontainer {
+  margin-top: 0.2em;
+}
+
+.moredetails .category {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+  color: white;
+  border-radius: 1.5em;
+  padding: 0.3em 0.5em;
+  margin: 0;
+}
+
+.moredetails .verticalbar {
+  color: lightgray;
+  margin: 0px 12px;
+  font-size: 24px;
+}
+
+.authorimage img {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+
+.moredetails .authorimage {
+  margin-right: 8px;
+  /* border: 2px solid gray; */
+  width: 32px;
+  height: 32px;
+  text-align: center;
+}
+
+.moredetails .author {
+  display: flex;
+  align-items: center;
+  color: var(--orange);
+  text-decoration: underline;
+  font-size: 0.9em;
+  margin: 0px 8px 0 0;
+
+  cursor: pointer;
+}
+
+.moredetails .createdat {
+  font-size: 0.8em;
+  color: gray;
+  margin: 0px 8px 0 0;
+}
+
+.moredetails .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  background-color: gray;
+  margin: 0px 8px 0 0;
+}
+
+.moredetails .comments {
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.moredetails .comments svg {
+  color: var(--orange);
+  margin: 0px 8px 0 0;
+}
+
+.moredetails .comments span {
+  color: var(--orange);
+  text-decoration: underline;
+  margin: 0px 8px 0 0;
+  font-size: 0.8em;
+}
+
+.moredetails .edit {
+  color: var(--orange);
+  text-decoration: underline;
+  font-size: 0.8em;
+
+  cursor: pointer;
+}
+
+@media (max-width: 460px) {
+  .leftcontainer {
+    width: 100%;
+  }
+}
+@media (min-width: 460px) {
+  .moredetails {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+  }
+}
