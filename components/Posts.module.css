@@ -4,8 +4,9 @@
   /* overflow: scroll; */
 }
 
-.sort label {
-  margin-right: 0.8em;
+.sortcontainer {
+  width: fit-content;
+  margin-left: 0.8em;
 }
 
 .loadmore {

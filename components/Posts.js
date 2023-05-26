@@ -1,8 +1,9 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { BsArrowRepeat } from "react-icons/bs";
 import { RiEmotionSadLine } from "react-icons/ri";
 
 import Post from "./Post";
+import SortBox from "../components/layout/SortBox";
 import { SearchContext } from "../context/context";
 import styles from "./Posts.module.css";
 
@@ -17,16 +18,7 @@ const images = [
 ];
 
 function Posts() {
-  const [selectValue, setSelectValue] = useState("popularity");
-  const { filteredPosts, loading, searchWasClear, dispatch } =
-    useContext(SearchContext);
-
-  useEffect(() => {
-    if (searchWasClear) {
-      setSelectValue("popularity");
-      dispatch({ type: "SORT", payload: "popularity" });
-    }
-  }, [searchWasClear, dispatch]);
+  const { filteredPosts, loading } = useContext(SearchContext);
 
   if (filteredPosts.length === 0 && !loading) {
     return (
@@ -37,27 +29,11 @@ function Posts() {
     );
   }
 
-  let selectChangeHandler = (event) => {
-    setSelectValue(event.target.value);
-    dispatch({ type: "SORT", payload: event.target.value });
-  };
-
   return (
     <div className={styles.posts}>
       {!loading ? (
-        <div className={styles.sort}>
-          <label htmlFor="order">Sort:</label>
-
-          <select
-            name="order"
-            id="order"
-            onChange={selectChangeHandler}
-            value={selectValue}
-          >
-            <option value={"popularity"}>Popularity</option>
-            <option value={"comments"}>Comments</option>
-            <option value={"created_at"}>Created at</option>
-          </select>
+        <div className={styles.sortcontainer}>
+          <SortBox />
         </div>
       ) : null}
 
