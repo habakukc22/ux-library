@@ -49,6 +49,7 @@ let formatDate = (date) => {
   if (years > 0) {
     return `${years} year${years > 1 ? "s" : ""} ago`;
   }
+
   if (days > 0) {
     return `${days} day${days > 1 ? "s" : ""} ago`;
   }
@@ -73,7 +74,6 @@ function Post(props) {
   const { imageUrl } = props;
   const { author, title, url } = meta;
   const isOwner = !!props.post.isOwner;
-  // console.log(isOwner);
 
   let categoryDetails;
   switch (category) {
