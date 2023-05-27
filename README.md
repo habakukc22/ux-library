@@ -44,7 +44,7 @@ As mentioned, we have used a lot of modern tools to create this project:
 
 ## Getting Started
 
-In order to set up the project locally in your machine you may follow the steps.
+In order to set up the project locally in your machine you need the Node installed and follow the steps.
 
 ### Installation
 
