@@ -30,5 +30,3 @@ export const SearchContextProvider = (props) => {
     </SearchContext.Provider>
   );
 };
-
-// export default SearchContext;

@@ -1,4 +1,5 @@
 import { BsFillHexagonFill } from "react-icons/bs";
+
 import styles from "./Logo.module.css";
 
 function Logo(props) {

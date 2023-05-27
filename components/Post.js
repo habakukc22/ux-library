@@ -1,8 +1,8 @@
 import { IoIosArrowUp } from "react-icons/io";
 import { FaComment } from "react-icons/fa";
+import Image from "next/image";
 
 import styles from "./Post.module.css";
-import Image from "next/image";
 
 // let formatDate = (date) => {
 //Here we suppose that the date stores the number of milliseconds since the post was created

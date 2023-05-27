@@ -1,4 +1,5 @@
 import { useContext, useEffect } from "react";
+
 import Posts from "../Posts";
 import { SearchContext } from "../../context/context";
 import styles from "./PostsContainer.module.css";

@@ -1,7 +1,6 @@
 .posts {
   max-width: 100%;
   margin-top: 36px;
-  /* overflow: scroll; */
 }
 
 .sortcontainer {
@@ -27,13 +26,7 @@
   font-size: 1.5em;
 }
 
-/* .loadmore svg:active {
-  transform: rotate(180deg);
-  transition: all 500ms ease-in-out;
-} */
-
 .loadmore span {
-  /* text-decoration: underline; */
   margin-left: 0.6em;
 }
 

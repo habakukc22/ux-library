@@ -2,8 +2,8 @@ import Image from "next/image";
 
 import facebook from "../../assets/facebook.svg";
 import twitter from "../../assets/twitter.svg";
-import styles from "./Footer.module.css";
 import Logo from "./Logo";
+import styles from "./Footer.module.css";
 
 function Footer() {
   return (

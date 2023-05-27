@@ -1,10 +1,8 @@
-import { useContext } from "react";
 import { BsArrowRepeat } from "react-icons/bs";
 import { RiEmotionSadLine } from "react-icons/ri";
 
 import Post from "./Post";
 import SortBox from "../components/layout/SortBox";
-import { SearchContext } from "../context/context";
 import styles from "./Posts.module.css";
 
 const images = [

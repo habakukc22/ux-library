@@ -15,6 +15,7 @@ const searchReducer = (state, action) => {
       };
 
     case "FILTER":
+      // eslint-disable-next-line no-case-declarations
       let filteredPosts = state.posts.filter(
         (post) =>
           post.meta.title
@@ -30,6 +31,7 @@ const searchReducer = (state, action) => {
       };
 
     case "SORT":
+      // eslint-disable-next-line no-case-declarations
       let sortedPosts;
       if (action.payload === "popularity") {
         sortedPosts = state.filteredPosts.sort((a, b) => b.upvotes - a.upvotes);

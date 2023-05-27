@@ -1,5 +1,4 @@
 import { Html, Head, Main, NextScript } from "next/document";
-import { SearchContextProvider } from "../context/context";
 
 export default function Document() {
   return (
