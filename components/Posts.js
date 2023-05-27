@@ -17,8 +17,8 @@ const images = [
   { name: "Dias", url: "https://i.ibb.co/Bt9JnYg/user7.jpg" },
 ];
 
-function Posts() {
-  const { filteredPosts, loading } = useContext(SearchContext);
+function Posts(props) {
+  const { filteredPosts, loading } = props;
 
   if (filteredPosts.length === 0 && !loading) {
     return (

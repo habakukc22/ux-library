@@ -7,41 +7,45 @@ import Logo from "./Logo";
 
 function Footer() {
   return (
-    <footer className={styles.footer}>
-      <div className={styles.left}>
-        <Logo display />
+    <div className={styles.container}>
+      <footer className={styles.footer}>
+        <div className={styles.left}>
+          <Logo display />
 
-        <div className={styles.title}>
-          <h3>The UX Library</h3>
-          <span>Community curated design content & discussion</span>
-        </div>
-      </div>
-
-      <div className={styles.right}>
-        <div className={styles.top}>
-          <div className={styles.socialmedia}>
-            <Image src={facebook} alt="Facebook" width={16} />
-            <span>Facebook</span>
-            <Image src={twitter} alt="Twitter" width={16} />
-            <span>Twitter</span>
+          <div className={styles.title}>
+            <h3>The UX Library</h3>
+            <span>Community curated design content & discussion</span>
           </div>
+        </div>
 
-          <span className={styles.dot}></span>
+        <div className={styles.right}>
+          <div className={styles.top}>
+            <div className={styles.socialmedia}>
+              <Image src={facebook} alt="Facebook" width={16} />
+              <span>Facebook</span>
+              <Image src={twitter} alt="Twitter" width={16} />
+              <span>Twitter</span>
+            </div>
 
-          <div className={styles.others}>
-            <div>
-              <span>About</span>
-              <span>Contact</span>
-              <span>Sign in</span>
+            <span className={styles.dot}></span>
+
+            <div className={styles.others}>
+              <div>
+                <span>About</span>
+                <span>Contact</span>
+                <span>Sign in</span>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className={styles.bottom}>
-          <span className={styles.copyright}>&copy; 2014 - The UX Library</span>
+          <div className={styles.bottom}>
+            <span className={styles.copyright}>
+              &copy; 2014 - The UX Library
+            </span>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   );
 }
 

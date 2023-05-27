@@ -19,13 +19,13 @@ export const SearchContextProvider = (props) => {
 
   const [state, dispatch] = useReducer(searchReducer, initialState);
 
-  const usersContext = {
+  const searchContext = {
     ...state,
     dispatch,
   };
 
   return (
-    <SearchContext.Provider value={usersContext}>
+    <SearchContext.Provider value={searchContext}>
       {props.children}
     </SearchContext.Provider>
   );
