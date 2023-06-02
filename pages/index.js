@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
+import NewButton from "../components/layout/NewButton";
 import PostsContainer from "../components/layout/PostsContainer";
 
 export default function Home() {
@@ -12,6 +13,8 @@ export default function Home() {
       </Head>
 
       <Navbar />
+
+      <NewButton />
 
       <PostsContainer />
 
